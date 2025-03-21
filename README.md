@@ -41,7 +41,7 @@ urllib3==2.2.0
 )
 
 Usage
-python cyber_scan.py [options]
+python cybersecurity_toolkit.py [options]
 Bash
 Options
 -n, --network: Network range to scan (e.g., 192.168.1.0/24). If not specified, the script will attempt to detect the subnet automatically.
@@ -54,13 +54,13 @@ Options
 
 Examples
 # Scan a network using the default arguments
-python cyber_scan.py -n 192.168.1.0/24
+python cybersecurity_toolkit.py -n 192.168.1.0/24
 
 # Scan a network using custom Nmap arguments
-python cyber_scan.py -n 192.168.1.0/24 -a "-sV -p 22,80,443"
+python cybersecurity_toolkit.py -n 192.168.1.0/24 -a "-sV -p 22,80,443"
 
 # Specify the output directory and filename
-python cyber_scan.py -n 192.168.1.0/24 -o /path/to/reports -f my_scan
+python cybersecurity_toolkit.py -n 192.168.1.0/24 -o /path/to/reports -f my_scan
 Bash
 Workflow
 The script detects the network subnet (or uses the user-provided value).
